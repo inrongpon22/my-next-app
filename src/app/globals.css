@@ -76,6 +76,14 @@ body {
   color: #ffff !important
 }
 
+.unstyled-anchor .ant-anchor::before{
+display: none !important;
+}
+
+.unstyled-anchor .ant-anchor .ant-anchor-ink-visible{
+  display: none !important;
+}
+
 .marquee {
   position: relative;
   width: 100vw;

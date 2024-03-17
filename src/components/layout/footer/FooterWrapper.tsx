@@ -1,55 +1,17 @@
 "use client";
 import React from "react";
 import moment from "moment";
-import {
-  FacebookOutlined,
-  InstagramOutlined,
-  LinkedinOutlined,
-  TwitterOutlined,
-} from "@ant-design/icons";
 import { Tooltip } from "antd";
 import Link from "next/link";
-
-const contactIcons = [
-  {
-    title: "Facebook",
-    icon: <FacebookOutlined />,
-    url: "https://www.facebook.com/",
-  },
-  {
-    title: "Instagram",
-    icon: <InstagramOutlined />,
-    url: "https://www.instagram.com/",
-  },
-  {
-    title: "Twitter",
-    icon: <TwitterOutlined />,
-    url: "https://twitter.com/",
-  },
-  {
-    title: "Linkedin",
-    icon: <LinkedinOutlined />,
-    url: "https://linkedin.com",
-  },
-];
+import Contact from "@/components/home/Contact";
 
 const FooterWrapper = () => {
   return (
     <section className="flex justify-center my-3">
       <div className="w-10/12 bg-[#333] text-white rounded-3xl">
-        <div className="flex justify-between p-10">
+        <Contact />
+        <div className="flex justify-between px-10 pb-10">
           <span>{moment().year()}© made by Phanupong</span>
-          <div className="flex">
-            {contactIcons.map((item: any, index: number) => {
-              return (
-                <Tooltip key={index} title={item.title}>
-                  <Link href={item.url} target="_blank" className="mx-2">
-                    {item.icon}
-                  </Link>
-                </Tooltip>
-              );
-            })}
-          </div>
           {/* <div className="footer-top">
             <div className="footer-links-wrapper">
               <div className="footer-list-block free">
