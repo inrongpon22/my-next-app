@@ -2,6 +2,7 @@ import React from "react";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeftOutlined } from "@ant-design/icons";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Login",
@@ -55,7 +56,7 @@ const AuthLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
         <div className="flex flex-col flex-center justify-center py-15 px-5 md:px-15 items-center">
           {/* begin::Logo */}
           <Link href="/" className="mb-12">
-            <img
+            <Image
               alt="Logo"
               src="/media/logos/custom-1.png"
               className="h-[75px]"
@@ -64,10 +65,10 @@ const AuthLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
           {/* end::Logo */}
 
           {/* begin::Image */}
-          <img
-            className="mx-auto w-[275px] md:w-1/2 xl:w-[500px] mb-10 lg:mb-20"
+          <Image
+            alt="Logo"
             src="/media/misc/auth-screens.png"
-            alt=""
+            className="mx-auto w-[275px] md:w-1/2 xl:w-[500px] mb-10 lg:mb-20"
           />
           {/* end::Image */}
 

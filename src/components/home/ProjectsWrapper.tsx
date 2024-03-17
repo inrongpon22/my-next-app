@@ -1,7 +1,8 @@
 import { ArrowRightOutlined } from "@ant-design/icons";
-import { Button, Card, Image } from "antd";
+import { Button, Card } from "antd";
 import React from "react";
 import getProjectsData from "./getProjects";
+import Image from "next/image";
 
 const ProjectsWrapper = () => {
   return (
@@ -29,7 +30,8 @@ const ProjectsWrapper = () => {
                 <Card
                   key={index}
                   hoverable
-                  cover={<img alt={item.title} src={item.previewImg} />}
+                  cover={<Image alt={item.title} src={item.previewImg} />}
+                  // <img alt={item.title} src={item.previewImg} />
                   className="border-2"
                 >
                   <div className="flex flex-col">

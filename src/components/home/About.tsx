@@ -1,5 +1,6 @@
 import { BuildOutlined, DesktopOutlined } from "@ant-design/icons";
 import { Card } from "antd";
+import Image from "next/image";
 import React from "react";
 
 const tools = [
@@ -77,14 +78,15 @@ const About = () => {
                 key={index}
                 className="bg-slate-200 flex flex-col items-center justify-center p-5 rounded-xl"
               >
-                <img alt={item.title} src={item.icon} className="w-[45px]" />
+                {/* <img alt={item.title} src={item.icon} className="w-[45px]" /> */}
+                <Image alt={item.title} src={item.icon} className="w-[45px]"  />
                 <span className="text-lg">{item.title}</span>
               </div>
             );
           })}
         </div>
         <span className="w-2/4 text-8xl text-right">
-          I'm a Front-End Developer
+          I&apos;m a Front-End Developer
         </span>
       </div>
       <div className="flex flex-col justify-center">

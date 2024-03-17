@@ -8,9 +8,9 @@ const DashboardLayout = ({
 }: Readonly<{
   children: React.ReactNode;
 }>) => {
-  const token = localStorage.getItem("token");
+  // const token = localStorage.getItem("token");
 
-  if (!token) window.location.replace("/auth/login");
+  // if (!token) window.location.replace("/auth/login");
 
   return (
     <div className="flex flex-col h-screen">

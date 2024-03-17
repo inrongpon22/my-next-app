@@ -6,6 +6,7 @@ import clsx from "clsx";
 import { useFormik } from "formik";
 import Link from "next/link";
 import { Button, Card, Divider, Input } from "antd";
+import Image from "next/image";
 
 const loginSchema = Yup.object().shape({
   email: Yup.string()
@@ -74,11 +75,16 @@ const Login = () => {
       <div className="grid grid-cols-2 gap-4 mb-9">
         <Button
           icon={
-            <img
+            <Image
               alt="Logo"
               src="/media/svg/brand-logos/google-icon.svg"
               className="h-[15px]"
             />
+            // <img
+            //   alt="Logo"
+            //   src="/media/svg/brand-logos/google-icon.svg"
+            //   className="h-[15px]"
+            // />
           }
         >
           Sign in with Google
@@ -87,16 +93,11 @@ const Login = () => {
         <Button
           icon={
             <>
-              <img
+              <Image
                 alt="Logo"
                 src="/media/svg/brand-logos/apple-black.svg"
                 className="theme-light-show h-[15px]"
               />
-              {/* <img
-                  alt="Logo"
-                  src="/media/svg/brand-logos/apple-black-dark.svg"
-                  className="theme-dark-show h-[15px] me-3"
-                /> */}
             </>
           }
         >
