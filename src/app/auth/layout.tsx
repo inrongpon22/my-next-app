@@ -60,6 +60,8 @@ const AuthLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
               alt="Logo"
               src="/media/logos/custom-1.png"
               className="h-[75px]"
+              width={75}
+              height={75}
             />
           </Link>
           {/* end::Logo */}
@@ -69,6 +71,8 @@ const AuthLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
             alt="Logo"
             src="/media/misc/auth-screens.png"
             className="mx-auto w-[275px] md:w-1/2 xl:w-[500px] mb-10 lg:mb-20"
+            width={500}
+            height={500}
           />
           {/* end::Image */}
 

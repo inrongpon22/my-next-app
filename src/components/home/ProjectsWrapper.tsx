@@ -30,7 +30,7 @@ const ProjectsWrapper = () => {
                 <Card
                   key={index}
                   hoverable
-                  cover={<Image alt={item.title} src={item.previewImg} />}
+                  cover={<Image alt={item.title} src={item.previewImg} width={500} height={500} />}
                   // <img alt={item.title} src={item.previewImg} />
                   className="border-2"
                 >

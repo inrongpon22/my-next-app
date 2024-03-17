@@ -7,6 +7,7 @@ import { useFormik } from "formik";
 import Link from "next/link";
 import { Button, Card, Divider, Input } from "antd";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const loginSchema = Yup.object().shape({
   email: Yup.string()
@@ -26,6 +27,7 @@ const initialValues = {
 };
 
 const Login = () => {
+  const router = useRouter();
   const [loading, setLoading] = useState(false);
   // const {saveAuth, setCurrentUser} = useAuth()
 
@@ -37,7 +39,7 @@ const Login = () => {
       try {
         console.log(values);
         await localStorage.setItem("token", "token");
-        await window.location.replace("/dashboard");
+        await router.push("/dashboard");
         // const {data: auth} = await login(values.email, values.password)
         // saveAuth(auth)
         // const {data: user} = await getUserByToken(auth.api_token)
@@ -78,7 +80,8 @@ const Login = () => {
             <Image
               alt="Logo"
               src="/media/svg/brand-logos/google-icon.svg"
-              className="h-[15px]"
+              width={15}
+              height={15}
             />
             // <img
             //   alt="Logo"
@@ -96,7 +99,9 @@ const Login = () => {
               <Image
                 alt="Logo"
                 src="/media/svg/brand-logos/apple-black.svg"
-                className="theme-light-show h-[15px]"
+                className="theme-light-show"
+                width={15}
+              height={15}
               />
             </>
           }
