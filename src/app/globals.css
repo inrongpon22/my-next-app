@@ -17,17 +17,81 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  color: black;
+  overflow-x: hidden;
+  /* color: rgb(var(--foreground-rgb)); */
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* custom css */
+/* .ant-menu {
+  color: #ffff;
+} */
+
+/* .ant-menu-light > .ant-menu-item {
+  color: #ffff;
+} */
+
+/* .ant-menu-light > .ant-menu-item-selected {
+  color: #ffff !important;
+  font-weight: 700;
+} */
+
+/* .ant-menu-light > .ant-menu-item:hover {
+  color: #1677ff !important;
+} */
+
+/* .ant-menu-light .ant-menu-submenu {
+  color: #ffff;
+} */
+
+/* .ant-menu-light .ant-menu-submenu-title {
+  color: #ffff;
+} */
+
+/* .ant-menu-submenu {
+  color: #ffff;
+} */
+
+/* .ant-menu-item-selected::after {
+  border-bottom-color: white !important;
+} */
+
+.ant-anchor{
+  color: #ffff
+}
+
+.ant-anchor-link-title{
+  color: #ffff !important
+}
+
+.marquee {
+  position: relative;
+  width: 100vw;
+  /* max-width: 100%; */
+  height: 110px;
+  overflow-x: hidden;
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
