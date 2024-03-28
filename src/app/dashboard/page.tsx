@@ -22,7 +22,7 @@ const Dashboard = () => {
   const [edgeType, setEdgeType] = useState<string>("default");
   const [progress, setProgress] = useState<number>(0);
 
-  const initialNodes = [
+  const initialNodes:any = [
     {
       id: "1",
       type: "input",
@@ -109,11 +109,11 @@ const Dashboard = () => {
   // we are using a bit of a shortcut here to adjust the edge type
   // this could also be done with a custom edge for example
   const edgesWithUpdatedTypes = edges.map((edge: any) => {
-    if (edge.sourceHandle) {
-      const edgeType = nodes.find((node: any) => node.type === "custom").data
-        .selects[edge.sourceHandle];
-      edge.type = edgeType;
-    }
+    // if (edge.sourceHandle) {
+    //   const edgeType = nodes.find((node: any) => node.type === "custom").data
+    //     .selects[edge.sourceHandle];
+    //   edge.type = edgeType;
+    // }
 
     return edge;
   });
