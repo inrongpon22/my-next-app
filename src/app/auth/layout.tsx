@@ -55,7 +55,7 @@ const AuthLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
         {/* begin::Content */}
         <div className="flex flex-col flex-center justify-center py-15 px-5 md:px-15 items-center">
           {/* begin::Logo */}
-          <Link href="/" className="mb-12">
+          {/* <Link href="/" className="mb-12">
             <Image
               alt="Logo"
               src="/media/logos/custom-1.png"
@@ -63,7 +63,7 @@ const AuthLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
               width={75}
               height={75}
             />
-          </Link>
+          </Link> */}
           {/* end::Logo */}
 
           {/* begin::Image */}
@@ -78,23 +78,18 @@ const AuthLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
 
           {/* begin::Title */}
           <h1 className="text-white fs-2qx fw-bolder text-center mb-7">
-            Fast, Efficient and Productive
+            Lorem ipsum dolor sit amet.
           </h1>
           {/* end::Title */}
 
           {/* begin::Text */}
           <div className="text-white fs-base text-center">
-            In this kind of post,{" "}
-            <a href="#" className="opacity-75-hover text-warning fw-bold me-1">
-              the blogger
-            </a>
-            introduces a person they’ve interviewed <br /> and provides some
-            background information about
-            <a href="#" className="opacity-75-hover text-warning fw-bold me-1">
-              the interviewee
-            </a>
-            and their <br /> work following this is a transcript of the
-            interview.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+            provident vero iure sed sapiente! Fuga fugit inventore, consequatur
+            mollitia, modi a dicta et numquam quia adipisci nisi culpa,
+            reprehenderit quam excepturi. Neque asperiores vel incidunt officia
+            iusto maxime odio blanditiis et consequatur ut quibusdam eaque enim,
+            modi quas molestias odit.
           </div>
           {/* end::Text */}
         </div>

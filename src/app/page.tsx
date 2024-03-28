@@ -8,6 +8,7 @@ import About from "@/components/home/About";
 import FooterWrapper from "@/components/layout/footer/FooterWrapper";
 import SubHeaderWrapper from "@/components/home/SubHeaderWrapper";
 import ProjectsWrapper from "@/components/home/ProjectsWrapper";
+import WorkExperience from "@/components/home/WorkExperience";
 
 export default function Home() {
   return (
@@ -18,8 +19,13 @@ export default function Home() {
         className="flex flex-col items-center justify-between py-28 px-12"
       >
         {/* min-h-screen */}
+
         <SubHeaderWrapper />
+
         <About />
+
+        <WorkExperience />
+
         <ProjectsWrapper />
         
         {/* saperator */}
@@ -32,6 +38,7 @@ export default function Home() {
           </div>
         </div>
         {/* saperator */}
+        
         {/* <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex py-24">
           <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
             Get started by editing&nbsp;

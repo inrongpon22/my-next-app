@@ -69,8 +69,8 @@ const services = [
 
 const About = () => {
   return (
-    <section id="about" className="w-full">
-      <div className="flex justify-around mt-36">
+    <section id="about" className="w-11/12">
+      <div className="flex items-center mt-24">
         <div className="w-2/4 grid grid-cols-4 gap-4">
           {tools?.map((item: any, index: number) => {
             return (
@@ -85,13 +85,13 @@ const About = () => {
             );
           })}
         </div>
-        <span className="w-2/4 text-8xl text-right">
-          I&apos;m a Front-End Developer
+        <span className="w-2/4 text-8xl text-center">
+          Tools
         </span>
       </div>
-      <div className="flex flex-col justify-center">
-        <span className="w-3/4 text-2xl text-center">Services</span>
-        <div className="flex justify-center gap-4">
+      <div id="services-background" className="flex flex-col justify-center items-center mt-12 p-24 rounded-2xl">
+        <span className="w-3/4 text-orange-400 text-4xl text-center font-semibold">Services</span>
+        <div className="flex justify-center gap-4 mt-4">
           {services?.map((item: any, index: number) => {
             return (
               <Card key={index}>

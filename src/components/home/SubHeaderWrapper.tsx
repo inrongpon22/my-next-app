@@ -8,7 +8,7 @@ const SubHeaderWrapper = () => {
     <section>
       <div className="flex flex-col lg:flex-row justify-around">
         <div className="lg:w-1/3 self-center order-2 lg:order-1">
-          <h1 className="text-8xl">Lorem ipsum dolor sit amet consectetur.</h1>
+          <h1 className="text-8xl">I&apos;m <span className="text-orange-400">Phanupong</span>, Front-End Developer.</h1>
         </div>
 
         <div className="container order-1 lg:order-2">

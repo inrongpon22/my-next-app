@@ -7,14 +7,12 @@ import Image from "next/image";
 const ProjectsWrapper = () => {
   return (
     <section id="projects">
-      <div className="mt-36 w-full">
+      <div className="mt-24 w-full">
         <div className="">
           <h1 className="text-6xl">Projects</h1>
           <div className="flex items-center pt-5">
             <span className="w-3/4 text-xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sunt
-              fugiat magnam error ullam ab unde praesentium porro reiciendis
-              voluptas?
+              Proudly project
             </span>
             <div className="w-1/4 text-right">
               <span role="button" className="text-bold hover:text-blue-500">
